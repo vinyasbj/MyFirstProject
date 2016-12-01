@@ -149,9 +149,24 @@
 .dropdown-menu li a:hover {
     background-color: black !important;
 }
+footer{
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 32px;
+
+}
+footer a:hover{
+  color: #777;
+  text-decoration: none;
+}
+footer a{
+  color: #f5f5f5;
+}
+
   </style>
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -160,7 +175,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#">BAND</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -229,8 +244,8 @@
 	<span class="sr-only">Next</span>
 </a>
 </div>
-
-<div class="container text-center">
+<!--container The Band-->
+<div id="band" class="container text-center">
   <h3>THE BAND</h3>
   <p><em>We love music!</em></p>
   <p>We have created a musical world just for you..</p>
@@ -284,7 +299,7 @@
 </div>
 
 <!-- Tour dates-->
-<div class="bg-1">
+<div id="tour" class="bg-1">
 	<div class="container">
 	<h3 class="text-center">TOUR DATES</h3>
 	<p class="text-center">we'll play you some music.<br> Remember to book tickets !</p>
@@ -356,7 +371,7 @@
 </div>
 </div>
 <!-- Container (Contact Section) -->
-<div class="container">
+<div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
   <p class="text-center"><em>We love our fans!</em></p>
 
@@ -387,6 +402,7 @@
   </div>
 
 
+<!--blog contant-->
 
 <h3 class="text-center">From The Blog</h3> 
 <ul class="nav nav-tabs">
@@ -437,6 +453,14 @@ marker.setMap(map);
 
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+
+<!--footer-->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br>
+  <p>Done by Vinyas,Refered <a href="http://www.w3schools.com" data-toggle="tooltip" title="Vist w3schools">www.w3schools.com </a></p>
+</footer>
 
 </body>
 </html>
